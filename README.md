@@ -1,6 +1,6 @@
 # Overview
 
-fThis is the sandbox for projects using eleventy.
+This is the sandbox for projects using eleventy.
 
 # Links
 
