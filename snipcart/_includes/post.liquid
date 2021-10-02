@@ -3,6 +3,7 @@ layout: main
 ---
 <h2>{{ title }}</h2>
 <p>
-    <i>Written: {{ date | date: "%b %d, %Y"}}</i>
+{% comment %} the text after the pipe (|) in the Liquid code above is a filter {% endcomment %}
+<i>Written: {{ date | date: "%b %d, %Y"}}</i>
 </p>
 {{ content }}
