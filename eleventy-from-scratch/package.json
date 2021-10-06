@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dancesWithCycles/sandbox-eleventy/issues"
   },
-  "homepage": "https://github.com/dancesWithCycles/sandbox-eleventy#readme"
+  "homepage": "https://github.com/dancesWithCycles/sandbox-eleventy#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
