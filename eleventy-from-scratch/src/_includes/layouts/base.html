@@ -7,11 +7,17 @@
     <title>{{ title }}</title>
   </head>
   <body>
-    <!--create named placeholder for content-->
-    {% block content %}
-    <p>
-      This is a placeholder content that renders because a template doesn’t define this block.
-    </p>
-    {% endblock %}
+    <!--the main element tells the browser where the main content of the site lives-->
+    <!--the id and tabindex attribute allows the main element to be programatically focused-->
+    <main tabindex="-1" id="main-content">{% block content %}{% endblock %}
+
+      <!--create named placeholder for content-->
+      {% block content %}
+      <p>
+	This is a placeholder content that renders because a template doesn’t define this block.
+      </p>
+      {% endblock %}
+
+    </main>
   </body>
 </html>
