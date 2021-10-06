@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang={{ site.language }}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <!--create named placeholder for content-->
+    {% block content %}
+    <p>
+      This is a placeholder content that renders because a template doesn’t define this block.
+    </p>
+    {% endblock %}
+  </body>
+</html>
