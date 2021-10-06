@@ -12,15 +12,18 @@
 
       <!--navigation-->
       <nav class="[ nav ] [ site-head__nav ] [ font-sans ]" aria-label="Primary">
+
 	<ul class="nav__list">
 
 	  <!-- use Nunjucks loop to go through each item-->
 	  {% for item in navigation.items %}
 	  <li>
-	    <a href="{{ item.url }}">{{ item.text }}</a>
+	    <!--reference the global data item page-->
+	    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a >
 	  </li>
 	  {% endfor %}
 	</ul>
+
       </nav>
 
     </div>
