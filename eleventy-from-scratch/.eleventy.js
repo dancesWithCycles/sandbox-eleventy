@@ -1,5 +1,7 @@
 //export a function that returns some settings
 module.exports = config => {
+    // pass src folders through to the output folder
+    config.addPassthroughCopy('./src/images/');
 
     return {
 
