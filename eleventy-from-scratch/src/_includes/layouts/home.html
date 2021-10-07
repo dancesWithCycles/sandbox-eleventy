@@ -24,8 +24,13 @@
   </div>
 </article>
 
+<!--reset variable before including partial-->
 {% set ctaContent = primaryCTA %}
 {% include "partials/cta.html" %}
+
+{% include "partials/featured-work.html" %}
+
+<!--reset variable before including partial-->
 {% set ctaContent = cta %}
 {% include "partials/cta.html" %}
 
