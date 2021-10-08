@@ -1,7 +1,10 @@
 # Others by SB
 package-lock.json
 *~
+*#
 .*~
+.*#
+*.#
 
 # Misc
 *.log
