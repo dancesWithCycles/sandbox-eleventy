@@ -1,0 +1,15 @@
+<!--tell this template to extend another one-->
+{% extends "layouts/base.html" %}
+
+<!--set data for the following partials by defining variables-->
+{% set pageHeaderTitle = title %}
+{% set pageHeaderSummary = content %}
+{% set postListItems = pagination.items %}
+
+<!-- implement block from extended layouts if you do not want to see any placeholders-->
+{% block content %}
+  <article>
+    {% include "partials/page-header.html" %}
+    {% include "partials/post-list.html" %}
+  </article>
+{% endblock %}
