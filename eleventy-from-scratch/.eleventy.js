@@ -17,6 +17,16 @@ module.exports = config => {
 	);
     });
 
+
+    // Returns a collection of blog posts in reverse date order
+    config.addCollection('blog', collection => {
+
+	//using spread syntax to create a copy of the original array itself instead of mutating the original
+	//the reverse method can now safely apply the mutation on the copy
+	return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+
+    });
+
     return {
 
 	//tell 11ty that markdown, data and HTML files are processed by Nunjucks.js
