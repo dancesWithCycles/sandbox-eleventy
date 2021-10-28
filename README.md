@@ -15,3 +15,9 @@ This is the sandbox for projects using eleventy.
 [eleventy with Tailwind CSS](https://stubborncode.com/)
 
 [eleventy critical CSS](https://github.com/gregives/eleventy-critical-css)
+
+[webpack in eleventy](https://statickit.com/guides/eleventy-webpack)
+
+[An Eleventy Starter with Tailwind CSS and Alpine.js](https://css-tricks.com/eleventy-starter-with-tailwind-css-alpine-js/)
+
+[Eleventy, Markdown, and Tailwind CSS](https://matthewtole.com/articles/eleventy-markdown-tailwind/)
